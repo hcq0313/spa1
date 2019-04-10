@@ -1,23 +1,22 @@
 /* export $timerBtn */
 var $timerBtn=(function(){
-  var n=6;
-  var init=function(){
-  var $container=$('.main');
-  var DOM='<input class="timer-button" type="button" value="同意(6s)" disabled>';
+  var cfg = {
+    container:'.main',
+    title:'确定',
+    time:9,
+    enabled:false,
+    clickHander:null
+  };
+
+  var n=cfg.time;
+  var init=function(conf){
+    $.extend(cfg,conf);
+  var $container=$(cfg.container);
+  var DOM='<input class="timer-button" type="button" value="'+cfg.title+'('+n+'s)" disabled>';
   $container.html(DOM);
-  /*
-  var $timerBtn=$('<input type="button" value="同意(6s) disabled">');
-  var $timerBtn.appendTo($container);
-  */
-  var $btnAgree = $('input[type="button"]');
   var $btnAgree=$container.find('.timer-button');
-  /*
-  $btnAgree.css({
-    'font-size':'1.2e,',
-    'height':'60px',
-    'width':'200px'
-  })
-  */
+  
+
   var timer = window.setInterval(function(){
     n--;
     if(n==0){
