@@ -2,41 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>定时器按钮测试页面</title>
-  <link rel="stylesheet" href="timer-button.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>SPA 任务清单</title>
   <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
 </head>
 <body>
-<style>
-.main{
-  width:200px;
-  height:200px;
-  margin:0 auto;
-}
-</style>
-
-<div class="main1"></div>
-<div class="main2"></div>
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="timer-button.js"></script>
-<script>
-$(function(){
-  var $btnAdd1 = $('input[value="add timer-btn1"]'),
-      $btnAdd2 = $('input[value="add timer-btn2"]');
-
-      $btnAdd1.click(function(){
-        $timerBtn.init({
-          title:'发送验证码',
-          time:6,
-          clickHandler:function(){
-          alert('handle event through arguments!');
-          }
-        });
-      });
-});
-</script>
+<h1>SPA 任务清单</h1>
+<ul>
+  <li><a href="./00-template/index.html">任务模板</a></li>
+  <li><a href="./10-timer-button">定时器按钮</a></li>
+  <li><a href="./12-range">滑杆</a></li>
+  <li><a href="./11-password-visual">密码可见</a></li>
+  <li><a href="./13-progress/index.html">进度条</a></li>
+  <li><a href="./20-form-validation">表单级校验</a></li>
+  <li><a href="./21-h5-validation">h5校验</a></li>
+  <li><a href="./31-echart">二进熵函数</a></li>
+  <li><a href="./32-map">百度地图</a></li>
+  <li><a href="./33-highlight">语法高亮</a></li>
+  <li><a href="./34-excel">Excel表格</a></li>
+  <li><a href="./41-timer-button">定时器按钮组件</a></li>
+  <li><a href="./42-password-visual">密码可见组件</a></li>
+  <!-- 参考上一行代码，后续任务链接加到这里 -->
+</ul>
 </body>
 </html>
-
 
 
