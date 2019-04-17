@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/hcq0313/spa1#readme",
   "devDependencies": {
-        "gitbook-cli": "^2.3.2"                                                                
+    "gitbook-cli": "^2.3.2"
   }
 }
